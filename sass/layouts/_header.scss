@@ -1,0 +1,39 @@
+.header {
+    background: $ligth_yellow_background;
+    color: $green_text;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+
+    @include respond(phone) {
+
+        &__logo{
+            max-width: 80%;
+
+            &--img {
+                max-width: 100%;
+            }
+        }
+        @include mobileRespond(little-p) {
+            
+        }
+        
+        @include mobileRespond(medium-p) {
+            
+        }
+        
+        @include mobileRespond(large-p) {
+            
+        }
+    }
+    @include respond(tablet) {
+    
+    }
+    @include respond(desktop) {
+    
+    }
+    @include respond(large-desktop) {
+    
+    }
+}

@@ -1,0 +1,128 @@
+.navigation {
+    display: flex;
+    width: auto;
+
+
+    // RESPONSIVE TELEPHONE
+    @include respond(phone) {
+
+        &__list {
+            display: none;
+            width: 100%;
+        }
+
+        .burger-icon {
+            display: block;
+            height: 4rem;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%) translateX(-20%);
+
+            &--close {
+                display: block;
+            }
+
+            &--open {
+                display: none;
+            }
+        }
+            // RESPONSIVE PETIT TELEPHONE
+        @include mobileRespond(little-p) {
+            
+        }
+            // RESPONSIVE MOYEN TELEPHONE
+        @include mobileRespond(medium-p) {
+            .burger-icon {
+                height: 5rem;
+                transform: translateY(-40%) translateX(-20%);
+            }
+        }
+            // RESPONSIVE GRAND TELEPHONE
+        @include mobileRespond(large-p) {
+            .burger-icon {
+                height: 5rem;
+                transform: translateY(-40%) translateX(-20%);
+            }
+        }
+    }
+
+
+    // RESPONSIVE TABLETTE
+    @include respond(tablet) {
+        .burger-icon {
+            display: block;
+            height: 8rem;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-40%) translateX(-40%);
+
+            &--close {
+                display: block;
+            }
+
+            &--open {
+                display: none;
+            }
+        }
+
+        &__list {
+            display: none;
+        }
+        
+    }
+
+
+    // RESPONSIVE ORDINATEUR
+    @include respond(desktop) {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 5rem;
+            font-size: 2rem;
+            list-style: none;
+        }
+
+        &__link, &__link:visited{
+            text-decoration: none;
+            color: $green_text;
+        }
+
+        .burger-icon {
+            display: none;
+        }
+        
+        &__list {
+            align-items: center;
+            gap: 9rem;
+        }
+    }
+
+
+    // RESPONSIVE GRAND ORDINATEUR
+    @include respond(large-desktop) {
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 5rem;
+            font-size: 2.5rem;
+            list-style: none;
+        }
+
+        &__link, &__link:visited{
+            text-decoration: none;
+            color: $green_text;
+        }
+
+        .burger-icon {
+            display: none;
+        }
+        
+        &__list {
+            align-items: center;
+            gap: 9rem;
+        }
+    }
+}

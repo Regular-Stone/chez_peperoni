@@ -6,37 +6,29 @@
 	<title>Chez Pepe Roni</title> 
 	<link rel="stylesheet" href="css/main.css"> 
 </head> 
-<body> 
-	<header> 
-		<h1>Chez Pepe Roni</h1> 
-		<nav> 
-			<ul> 
-				<li><a href="index.html">Accueil</a></li> 
-				<li><a href="carte.html">Carte</a></li>
-				<li><a href="menu.html">Réservation</a></li>
-				<li><a href="commande.html">Commandes</a></li>
-				<li><a href="contact.html">Contact</a></li> 
-			</ul> 
-		</nav> 
-	</header> 
-	<main> 
-		<section> 
-			<h2>Accueil</h2> 
-			<p>Bienvenue chez Pepe Roni, le restaurant qui vous propose des pizzas à la pâte fine et croustillante, garnies de produits frais et de qualité. Venez déguster nos pizzas sur place ou à emporter !</p> 
-		</section> 
-		<section> 
-			<h2>Menu</h2> 
-			<p>Consultez notre menu pour découvrir nos pizzas, nos boissons et nos desserts.</p> 
-			<a href="menu.html">Voir le menu</a> 
-		</section> 
-		<section> 
-			<h2>Contact</h2> 
-			<p>Pour toute question ou réservation, contactez-nous par téléphone ou par e-mail.</p> 
-			<a href="contact.html">Nous contacter</a> 
-		</section> 
-	</main> 
-	<footer> 
-		<p>&copy; 2024 Chez Pepe Roni</p> 
-	</footer>
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<div class="header__logo">
+			<img src="./img/logov2.png" alt="" class="header__logo--img">
+		</div>
+		<!-- NAVIGATION -->
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li class="navigation__item"><a href="#" class="navigation__link">Accueil</a></li>
+				<li class="navigation__item"><a href="#" class="navigation__link">Carte</a></li>
+				<li class="navigation__item"><a href="#" class="navigation__link">A Propos</a></li>
+				<li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+				<li class="navigation__item"><a href="#" class="navigation__link">Réservation</a></li>
+				<li class="navigation__item"><a href="#" class="navigation__link">Commande</a></li>
+			</ul>
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="burger-icon burger-icon--close">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="burger-icon burger-icon--open">
+				<path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+			</svg>
+		</nav>
+	</header>
 </body> 
 </html> 
