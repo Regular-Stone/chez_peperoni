@@ -15,7 +15,11 @@
 
     <main class="main-content">
         <div class="main-content__pizza-img"></div>
-        <h2 class="main-content__heading">Pizzas Custom</h2>
+        <h2 class="main-content__heading">Pizzas Custom 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="main-content__heading--toggle-icon close">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+        </svg>
+        </h2>
         <div class="pizza-constructor">
             <h3 class="first-section pizza-constructor__heading">La base de la Pizza</h3>
             <ul class="base-selector">
@@ -55,6 +59,7 @@
                 <li><input type="checkbox" name="other-selector" id="capres" value="capres"><label for="capres">Câpres</label></li>
                 <li><input type="checkbox" name="other-selector" id="oeufs" value="oeufs"><label for="oeufs">Oeufs</label></li>
             </ul>
+            <button class="pizza-constructor__submit">Commander</button>
         </div>
     </main>
 </body>
