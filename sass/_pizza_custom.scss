@@ -5,10 +5,15 @@
 
 
         &__pizza-img {
-            background: url(../img/pizza.png) no-repeat right bottom/cover;
+            background: url(../img/pizza_composer.png) no-repeat right center/cover;
             height: 15vh;
             width: 100%;
         }
+
+        &__pizza-img2{
+            background: url(../img/pizza.png) no-repeat right bottom/cover;
+            height: 15vh;
+            width: 100%;}
         
         &__heading{
             width: 100%;
@@ -29,9 +34,9 @@
                 cursor: pointer;
             }
 
-            // .close {
-            //     transform: rotate(180deg) translateY(50%);
-            // }
+            .close {
+                transform: rotate(180deg) translateY(50%);
+            }
         }
         
         // PARTIE DU CONSTRUCTEUR DE PIZZA CUSTOM
@@ -70,7 +75,9 @@
             }
         }
 
-
+        .hidden {
+            display: none;
+        }
 
     }
 }

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="./js/toogle_article.js"></script>
 </head>
 <body>
     <header style="height: 10vh; background-color: grey;">
@@ -20,7 +21,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
         </svg>
         </h2>
-        <div class="pizza-constructor">
+        <div class="pizza-constructor hidden">
             <h3 class="first-section pizza-constructor__heading">La base de la Pizza</h3>
             <ul class="base-selector">
                 <li><input type="radio" name="base-selector" class="selector" id="tomate" value="tomate" checked><label for="tomate">Tomate</label></li>
@@ -61,6 +62,13 @@
             </ul>
             <button class="pizza-constructor__submit">Commander</button>
         </div>
+        <div class="main-content__pizza-img2"></div>
+        <h2 class="main-content__heading">Pizzas Classiques
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="main-content__heading--toggle-icon close">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+        </svg>
+        </h2>
+        <div style="height: 80vh; background-color: #F3D973;" class="pizza-classic hidden">
     </main>
 </body>
 </html>
