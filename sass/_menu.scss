@@ -1,0 +1,44 @@
+@media all and (max-width: 768px) and (orientation: portrait){
+    .main-content {
+        width: 100%;
+        
+
+
+        &__pizza-img {
+            background: url(../img/pizza.png) no-repeat right bottom/cover;
+            height: 15vh;
+            width: 100%;
+        }
+        
+        &__heading{
+            width: 100%;
+            background-color:darken($ligth_yellow_background, 10%);
+            text-align: center;
+            font-size: 2rem;
+            padding: 1rem 0;
+        }
+        
+        // PARTIE DU CONSTRUCTEUR DE PIZZA CUSTOM
+        .pizza-constructor {
+            width: 100%;
+            background:  $ligth_yellow_background;
+            
+
+        
+            &__heading {
+                text-align: center;
+                padding: 1.5rem 0;
+            }
+
+            
+            @include list;
+
+            @media all and (max-width: 281px) and (orientation: portrait) {
+                @include list(1.2rem, 2.5rem);
+            }
+        }
+
+
+
+    }
+}

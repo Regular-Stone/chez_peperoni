@@ -1,6 +1,36 @@
 $ligth_yellow_background: #F3D973;
 $dark_yellow_background: #f7b52b;
 $green_text: #066412;
+$default_font: 'Capriola', sans-serif;
+$secondary_font: 'Montserrat', sans-serif;
+
+@mixin list($font_size: 1.8rem, $padding-left: 5rem){
+    ul {
+        list-style: none;
+        display: grid;
+        font-family: $secondary_font;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1rem;
+        font-size: $font_size;
+
+        li:nth-child(odd) {
+            grid-column: 1/2;
+            padding-left: 1rem;
+            
+        }
+
+        li:nth-child(even) {
+            grid-column: 2/3;
+            padding-left: $padding-left
+            
+        }
+
+        label{
+            margin-left: 0.5rem;
+            
+        }
+    }
+}
 
 * {
     padding: 0;
@@ -13,4 +43,7 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: $default_font;
 }
+
+@import "menu";

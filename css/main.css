@@ -9,117 +9,71 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Capriola", sans-serif;
 }
 
-.navigation {
-  display: flex;
-  width: auto;
-}
-@media (max-width: 530px) and (orientation: portrait) {
-  .navigation__list {
-    display: none;
+@media all and (max-width: 768px) and (orientation: portrait) {
+  .main-content {
     width: 100%;
   }
-  .navigation .burger-icon {
-    display: block;
-    height: 4rem;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%) translateX(-20%);
+  .main-content__pizza-img {
+    background: url(../img/pizza.png) no-repeat right bottom/cover;
+    height: 15vh;
+    width: 100%;
   }
-  .navigation .burger-icon--close {
-    display: block;
-  }
-  .navigation .burger-icon--open {
-    display: none;
-  }
-}
-@media (max-width: 530px) and (orientation: portrait) and (min-width: 282px) and (max-width: 390px) and (orientation: portrait) {
-  .navigation .burger-icon {
-    height: 5rem;
-    transform: translateY(-40%) translateX(-20%);
-  }
-}
-@media (max-width: 530px) and (orientation: portrait) and (min-width: 391px) and (orientation: portrait) {
-  .navigation .burger-icon {
-    height: 5rem;
-    transform: translateY(-40%) translateX(-20%);
-  }
-}
-@media (min-width: 531px) and (max-width: 1023px) {
-  .navigation .burger-icon {
-    display: block;
-    height: 8rem;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-40%) translateX(-40%);
-  }
-  .navigation .burger-icon--close {
-    display: block;
-  }
-  .navigation .burger-icon--open {
-    display: none;
-  }
-  .navigation__list {
-    display: none;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1199px) and (orientation: landscape) {
-  .navigation__list {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 5rem;
+  .main-content__heading {
+    width: 100%;
+    background-color: #efcc44;
+    text-align: center;
     font-size: 2rem;
+    padding: 1rem 0;
+  }
+  .main-content .pizza-constructor {
+    width: 100%;
+    background: #F3D973;
+  }
+  .main-content .pizza-constructor__heading {
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  .main-content .pizza-constructor ul {
     list-style: none;
+    display: grid;
+    font-family: "Montserrat", sans-serif;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    font-size: 1.8rem;
   }
-  .navigation__link, .navigation__link:visited {
-    text-decoration: none;
-    color: #066412;
+  .main-content .pizza-constructor ul li:nth-child(odd) {
+    grid-column: 1/2;
+    padding-left: 1rem;
   }
-  .navigation .burger-icon {
-    display: none;
+  .main-content .pizza-constructor ul li:nth-child(even) {
+    grid-column: 2/3;
+    padding-left: 5rem;
   }
-  .navigation__list {
-    align-items: center;
-    gap: 9rem;
+  .main-content .pizza-constructor ul label {
+    margin-left: 0.5rem;
   }
 }
-@media (min-width: 1200px) and (orientation: landscape) {
-  .navigation__list {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 5rem;
-    font-size: 2.5rem;
+@media all and (max-width: 768px) and (orientation: portrait) and (max-width: 281px) and (orientation: portrait) {
+  .main-content .pizza-constructor ul {
     list-style: none;
+    display: grid;
+    font-family: "Montserrat", sans-serif;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    font-size: 1.2rem;
   }
-  .navigation__link, .navigation__link:visited {
-    text-decoration: none;
-    color: #066412;
+  .main-content .pizza-constructor ul li:nth-child(odd) {
+    grid-column: 1/2;
+    padding-left: 1rem;
   }
-  .navigation .burger-icon {
-    display: none;
+  .main-content .pizza-constructor ul li:nth-child(even) {
+    grid-column: 2/3;
+    padding-left: 2.5rem;
   }
-  .navigation__list {
-    align-items: center;
-    gap: 9rem;
-  }
-}
-
-.header {
-  background: #F3D973;
-  color: #066412;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  position: relative;
-}
-@media (max-width: 530px) and (orientation: portrait) {
-  .header__logo {
-    max-width: 80%;
-  }
-  .header__logo--img {
-    max-width: 100%;
+  .main-content .pizza-constructor ul label {
+    margin-left: 0.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
