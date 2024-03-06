@@ -1,14 +1,16 @@
-// IMPORT BASE FILES
-@import "base/animations";
-@import "base/mixins";
-@import "base/variables";
-@import "base/base";
+$ligth_yellow_background: #F3D973;
+$dark_yellow_background: #f7b52b;
+$green_text: #066412;
 
-// IMPORT COMPONENTS
-@import "components/carousel";
-@import "components/navigation";
+* {
+    padding: 0;
+    margin: 0;
+}
 
-// IMPORT LAYOUTS
-@import "layouts/header";
-@import "layouts/footer";
-@import "layouts/main";
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
