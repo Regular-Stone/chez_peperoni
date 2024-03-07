@@ -4,31 +4,71 @@
 	<meta charset="UTF-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Chez Pepe Roni</title> 
-	<link rel="stylesheet" href="css/main.css"> 
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head> 
 <body>
-	<!-- HEADER -->
-	<header class="header">
-		<div class="header__logo">
-			<img src="./img/logov2.png" alt="" class="header__logo--img">
+	<header style="height: 15vh; background: grey;"></header>
+	<!-- MAIN -->
+	<main class="home-content">
+		<div class="home-content__heading">
+			<img class="home-content__heading--img" src="./img/pizza1.jpg" alt="">
+			<h1 class="home-content__heading--title"><span>Chez Pepe Roni</span><span>Pizzeria familiale et traditionnelle à Albi</span></h1>
 		</div>
-		<!-- NAVIGATION -->
-		<nav class="navigation">
-			<ul class="navigation__list">
-				<li class="navigation__item"><a href="#" class="navigation__link">Accueil</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link">Carte</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link">A Propos</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link">Réservation</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link">Commande</a></li>
+
+		<div class="home-content__carousel-group">
+			<div class="home-content__carousel-group__item">La tradition, notre passion.</div>
+			<div class="home-content__carousel-group__item">Pizza Custom : <button>Commandez la votre</button></div>
+			<div class="home-content__carousel-group__item"></div>
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="backward">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="forward">
+				<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+			</svg>
+		</div>
+	</main>
+
+	<!-- FOOTER -->
+	    <!-- FOOTER -->
+		<footer class="footer">
+			<ul class="footer__container">
+				<li class="center-section footer__link">
+				  <a href="#">CGU</a>
+				</li>
+				<li class="center-section">
+				  <svg 
+				  fill="#000000" 
+				  height="800px" 
+				  width="800px" 
+				  version="1.1" id="Layer_1" 
+				  xmlns="http://www.w3.org/2000/svg" 
+				  xmlns:xlink="http://www.w3.org/1999/xlink" 
+				  viewBox="0 0 310 310" 
+				  xml:space="preserve"
+				  class="facebook-icon center-section"
+				  >
+				  <g id="XMLID_834_">
+				  <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+					c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+					V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+					C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+					c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"/>
+				  </g>
+				</li>
+				<li class="center-section">
+				  <img src="./img/X_logo_2023.svg.png" 
+				  alt="logo X" 
+				  class="x-icon">
+				</li>
+				<li class="center-section footer__link">
+				  <a href="#">CGV</a>
+				</li>
 			</ul>
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="burger-icon burger-icon--close">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-			</svg>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="burger-icon burger-icon--open">
-				<path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-			</svg>
-		</nav>
-	</header>
+		</footer>
+
+		<script src="./js/carousel_home.js"></script>
 </body> 
 </html> 

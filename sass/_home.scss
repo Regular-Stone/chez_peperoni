@@ -1,0 +1,139 @@
+.home-content {
+    // Home Heading (titre)
+    &__heading {
+        height: 20vh;
+        position: relative;
+
+
+        &--img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &--title {
+            font-size: 2.5rem;
+            font-family: $secondary_font;
+            color: lighten($green_text, 10%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translateY(-50%) translateX(-50%);
+            text-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .9), .5rem .3rem .1rem rgba(0, 0, 0, .9);
+
+            
+    
+            span:nth-child(odd){
+                font-size: 3.5rem;
+            }
+            span{
+                display: block;
+                padding: 2.5rem 0 1rem 0;
+            }
+        }
+    }
+
+    // Home Carousel (carrousel)
+    &__carousel-group {
+        height: 65vh;
+        position: relative;
+        width: 100vw;
+        
+
+        &__item {
+            width: 80%;
+            height: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.8rem;
+            font-family: 'Capriola', sans-serif;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: .3rem;
+            text-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .9), .5rem .3rem .1rem rgba(0, 0, 0, .9);
+            color: lighten($green_text, 10%);
+            margin:1.5rem auto;
+            background: url(../img/pizza2.jpg) no-repeat center/cover;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+
+            $positions: 50%, 150%, 300%;
+
+            &:nth-child(2) {
+                left: 150%;
+                background: url(../img/peperoni.jpg) no-repeat center/cover;
+                flex-direction: column;
+                gap: 2.5rem;
+
+                button {
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    padding: 1rem 2rem;
+                    background-color: #F7B52B;
+                    border: none;
+                    border-radius: .5rem;
+                    
+
+                    &:hover {
+                        transform: translateY(-.3rem);
+                    }
+
+                    &:active {
+                        transform: translateY(-.1rem);
+                    }
+                }
+            }
+            &:nth-child(3) {
+                left: 300%;
+                background: green;
+            }
+        }
+
+
+        .backward {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            height: 5rem;
+
+            &:hover {
+                transform: scale(1.15);
+            }
+            &:active {
+                transform: scale(1.1);
+            }
+        }
+
+        .forward {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            height: 5rem;
+
+            &:hover {
+                transform: scale(1.15);
+            }
+            &:active {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .home-content {
+        &__heading {
+            &--title {
+                width: 100%;
+                font-size: 2rem;
+                span:nth-child(odd){
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
