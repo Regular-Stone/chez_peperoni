@@ -40,11 +40,14 @@ $secondary_font: 'Montserrat', sans-serif;
 
 html {
     font-size: 10px;
+    scrollbar-width: none;
 }
 
 body {
     font-size: 1.6rem;
     font-family: $default_font;
+    background-color: $ligth_yellow_background
 }
 
 @import "pizza_custom";
+@import "header";

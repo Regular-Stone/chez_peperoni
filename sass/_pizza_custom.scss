@@ -5,12 +5,14 @@
 
 
         &__pizza-img {
+            display: block;
             background: url(../img/pizza_composer.png) no-repeat right center/cover;
             height: 15vh;
             width: 100%;
         }
 
         &__pizza-img2{
+            display: block;
             background: url(../img/pizza.png) no-repeat right bottom/cover;
             height: 15vh;
             width: 100%;}
@@ -79,5 +81,86 @@
             display: none;
         }
 
+    }
+}
+
+@media all and (min-width: 769px){
+    .main-content {
+        width: 100%;
+        
+    
+    
+        &__pizza-img {
+            display: none;
+        }
+    
+        &__pizza-img2{
+            display: none;
+        }
+        
+        &__heading{
+            width: 100%;
+            background-color:darken($ligth_yellow_background, 10%);
+            text-align: center;
+            font-size: 2rem;
+            padding: 1rem 0;
+            position: relative;
+    
+            &--toggle-icon {
+                position: absolute;
+                top: 50%;
+                height: 3rem;
+                width: 3rem;
+                right: 1rem;
+                transform: translateY(-50%);
+                font-size: 2.5rem;
+                cursor: pointer;
+            }
+    
+            .close {
+                transform: rotate(180deg) translateY(50%);
+            }
+        }
+        
+        // PARTIE DU CONSTRUCTEUR DE PIZZA CUSTOM
+        .pizza-constructor {
+            width: 100%;
+            background:  $ligth_yellow_background;
+            display: flex;
+            flex-direction: column;
+            
+    
+        
+            &__heading {
+                text-align: center;
+                padding: 1.5rem 0;
+            }
+    
+            
+            @include list;
+    
+    
+            &__submit {
+                margin: 2rem auto;
+                width: 80%;
+                text-align: center;
+                padding: 1rem 0;
+                font-family: $default_font;
+                font-weight: 700;
+                background-color: $dark_yellow_background;
+                color: $green_text;
+                font-size: 2rem;
+                cursor: pointer;
+            }
+    
+            @media all and (max-width: 281px) and (orientation: portrait) {
+                @include list(1.2rem, 2.5rem);
+            }
+        }
+    
+        .hidden {
+            display: none;
+        }
+    
     }
 }

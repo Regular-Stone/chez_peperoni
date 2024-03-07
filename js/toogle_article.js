@@ -18,3 +18,8 @@ all_articles.forEach((article, index) => {
         }
     });
 });
+
+let body = document.querySelector('body');
+for(let i = 0; i < all_articles.length; i++){
+    all_articles[i].classList.contains('close') ? body.style.height = "100vh" : body.style.height = "auto";
+}

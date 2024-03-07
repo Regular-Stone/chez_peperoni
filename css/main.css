@@ -5,11 +5,13 @@
 
 html {
   font-size: 10px;
+  scrollbar-width: none;
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Capriola", sans-serif;
+  background-color: #F3D973;
 }
 
 @media all and (max-width: 768px) and (orientation: portrait) {
@@ -17,11 +19,13 @@ body {
     width: 100%;
   }
   .main-content__pizza-img {
+    display: block;
     background: url(../img/pizza_composer.png) no-repeat right center/cover;
     height: 15vh;
     width: 100%;
   }
   .main-content__pizza-img2 {
+    display: block;
     background: url(../img/pizza.png) no-repeat right bottom/cover;
     height: 15vh;
     width: 100%;
@@ -112,6 +116,174 @@ body {
 }
 @media all and (max-width: 768px) and (orientation: portrait) {
   .main-content .hidden {
+    display: none;
+  }
+}
+@media all and (min-width: 769px) {
+  .main-content {
+    width: 100%;
+  }
+  .main-content__pizza-img {
+    display: none;
+  }
+  .main-content__pizza-img2 {
+    display: none;
+  }
+  .main-content__heading {
+    width: 100%;
+    background-color: #efcc44;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+    position: relative;
+  }
+  .main-content__heading--toggle-icon {
+    position: absolute;
+    top: 50%;
+    height: 3rem;
+    width: 3rem;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  .main-content__heading .close {
+    transform: rotate(180deg) translateY(50%);
+  }
+  .main-content .pizza-constructor {
+    width: 100%;
+    background: #F3D973;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .pizza-constructor__heading {
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  .main-content .pizza-constructor ul {
+    list-style: none;
+    display: grid;
+    font-family: "Montserrat", sans-serif;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    font-size: 1.8rem;
+  }
+  .main-content .pizza-constructor ul li:nth-child(odd) {
+    grid-column: 1/2;
+    padding-left: 1rem;
+  }
+  .main-content .pizza-constructor ul li:nth-child(even) {
+    grid-column: 2/3;
+    padding-left: 5rem;
+  }
+  .main-content .pizza-constructor ul label {
+    margin-left: 0.5rem;
+  }
+  .main-content .pizza-constructor__submit {
+    margin: 2rem auto;
+    width: 80%;
+    text-align: center;
+    padding: 1rem 0;
+    font-family: "Capriola", sans-serif;
+    font-weight: 700;
+    background-color: #f7b52b;
+    color: #066412;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 281px) and (orientation: portrait) {
+  .main-content .pizza-constructor ul {
+    list-style: none;
+    display: grid;
+    font-family: "Montserrat", sans-serif;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    font-size: 1.2rem;
+  }
+  .main-content .pizza-constructor ul li:nth-child(odd) {
+    grid-column: 1/2;
+    padding-left: 1rem;
+  }
+  .main-content .pizza-constructor ul li:nth-child(even) {
+    grid-column: 2/3;
+    padding-left: 2.5rem;
+  }
+  .main-content .pizza-constructor ul label {
+    margin-left: 0.5rem;
+  }
+}
+@media all and (min-width: 769px) {
+  .main-content .hidden {
+    display: none;
+  }
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  background-color: #F3D973;
+}
+.header__logo {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  background-color: #F3D973;
+  width: 100%;
+  height: 12rem;
+}
+.header__logo--img {
+  width: 30%;
+}
+.header .navigation {
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+.header .navigation__list {
+  position: relative;
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: end;
+  align-content: center;
+  bottom: 8rem;
+}
+.header .navigation__item {
+  position: relative;
+  z-index: 3;
+  padding: 5rem;
+}
+.header .navigation__link {
+  color: #066412;
+  font-family: "Capriola", sans-serif;
+  text-decoration: none;
+}
+.header .navigation .burger-icon {
+  display: none;
+}
+
+@media all and (max-width: 1000px) {
+  .header .navigation {
+    display: flex;
+    justify-content: end;
+    align-content: center;
+  }
+  .header .navigation__list {
+    display: none;
+  }
+  .header .navigation .burger-icon {
+    display: flex;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    padding: 1rem;
+  }
+  .header .navigation .close {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */
